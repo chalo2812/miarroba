@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="nginx.png" >
+  <link rel="icon" href="favicon.ico" >
   <title>Systech Vigia</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -17,10 +17,10 @@
     <navbar class="navbar navbar-expand-lg bg-secondary" data-bs-theme="dark">
       <div class="container">
         <button type="button" class="btn" onclick="switchSystech()">
-          <img src="systechsa.png" height="100%" class="rounded float-start"/>
+          <img src="logo.png" height="100%" class="rounded float-start"/>
         </button>
         <button type="button" class="btn bg-success">
-          <a href="/">Link local</a>
+          <a href="https://systechsa.com/">Link local</a>
         </button>
       </div>
     </navbar>
