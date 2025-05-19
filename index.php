@@ -13,8 +13,8 @@
   <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
 </head>
 <body>
-  <header>
-    <navbar class="navbar navbar-expand-lg bg-secondary" data-bs-theme="dark">
+  <header class="header">
+    <navbar class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container">
         <button type="button" class="btn" onclick="switchSystech()">
           <img src="logo.png" height="100%" class="rounded float-start"/>

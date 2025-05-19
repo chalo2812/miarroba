@@ -35,3 +35,6 @@ table {
   border-collapse: separate;
   border-spacing: 0;
 }
+header {
+  background-color: rgb(48, 45, 231);
+}
