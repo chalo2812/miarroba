@@ -2,6 +2,11 @@ body {
   font-family: Arial, Apple-Color-Emoji, Segoe-UI-Emoji, Segoe-UI-Symbol, Noto-Color-Emoji;
   display: flexbox;
 }
+div {
+    display: grid;
+//    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
 a { 
   color: rgb(33, 111, 176); 
   align-items: center;
