@@ -39,7 +39,7 @@
         <td align="center" colspan="5">
           <b>
             <div style="padding-top: 10px; padding-left: 10px;">
-              <a target="_blank" href="http://localhost:8080/VIGIA_BANCA_STD9.19">Página</a>
+              <a target="_blank" href="http://localhost:8080/manager/html">Pagina</a>
             </div>
           </b>
         </td>
