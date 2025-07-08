@@ -36,13 +36,23 @@
         </td>
       </tr>
       <tr class="trStyle" style="text-align: center;">
-        <td align="center" colspan="5">
+        <td align="center" colspan="2">
           <b>
             <div style="padding-top: 10px; padding-left: 10px;">
               <a target="_blank" href="http://localhost:8080/manager/html">Pagina</a>
             </div>
           </b>
         </td>
+        <td align="center">
+        </td>
+        <td align="center" colspan="2">
+          <b>
+            <div style="padding-top: 10px; padding-left: 10px;">
+              <a target="_blank" href="http://localhost:9090/swagger-ui/index.html">Pagina Swagger</a>
+            </div>
+          </b>
+        </td>
+
       </tr>
       <tr id="frontend">
         <td colspan="5" align="center">
