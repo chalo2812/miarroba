@@ -43,7 +43,12 @@
             </div>
           </b>
         </td>
-        <td align="center">
+        <td align="center" >
+          <b>
+            <div style="padding-top: 10px; padding-left: 10px;">
+              <a target="_blank" href="http://localhost:8080/VIGIALISTAS_LISTAS_STD9.20">Pagina VIGIALISTAS_LISTAS_STD9</a>
+            </div>
+          </b>
         </td>
         <td align="center" colspan="2">
           <b>

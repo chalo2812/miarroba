@@ -1,10 +1,12 @@
 body { 
   font-family: Arial, Apple-Color-Emoji, Segoe-UI-Emoji, Segoe-UI-Symbol, Noto-Color-Emoji;
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 div {
     display: grid;
-//    min-height: 100dvh;
+    min-height: 10dvh;
     grid-template-rows: auto 1fr auto;
 }
 a { 
@@ -27,6 +29,18 @@ trStyle {
   flex-direction: row; 
   width: fit-content;
 }
+
+.footer {
+  text-align: center;
+  font-size: smaller;
+  border: 1px; 
+  background-color: rgb(56, 55, 55); 
+  flex: 0; 
+  color: white;
+  padding: 15px;
+  margin-top: auto;
+}
+
 footer {
   text-align: center;
   font-size: smaller;
@@ -35,7 +49,9 @@ footer {
   flex: 0; 
   color: white;
   padding: 15px;
+  margin-top: auto;
 }
+
 table {
   border-collapse: separate;
   border-spacing: 0;
