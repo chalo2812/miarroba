@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 div {
     display: grid;
     min-height: 10dvh;
@@ -58,4 +59,9 @@ table {
 }
 header {
   background-color: rgb(48, 45, 231);
+}
+
+.systech {
+  text-align: center;
+  font-size: xxx-large;
 }

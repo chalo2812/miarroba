@@ -12,6 +12,17 @@
   <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
 </head>
+
+<!--style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+</style-->
 <body>
   <header class="header">
     <navbar class="navbar navbar-expand-lg" data-bs-theme="dark">
@@ -19,9 +30,9 @@
         <button type="button" class="btn" onclick="switchSystech()">
           <img src="logo.png" height="100%" class="rounded float-start"/>
         </button>
-        <button type="button" class="btn bg-success">
-          <a href="https://systechsa.com/">Link local</a>
-        </button>
+        <div type="button" class="systech btn bg-success" >
+          <a target="_blank" href="https://systechsa.com/">Systech SA</a>
+        </div>
       </div>
     </navbar>
   </header>
@@ -35,8 +46,15 @@
           <h2><p style="text-align: center; color: red;">Local</p></h2>
         </td>
       </tr>
-      <tr class="trStyle" style="text-align: center;">
-        <td align="center" colspan="2">
+      <tr style="text-align: center;">
+        <td align="center" >
+          <b>
+            <div style="padding-top: 10px; padding-left: 10px;">
+              <a target="_blank" href="http://localhost:8080/manager/html">Control</a>
+            </div>
+          </b>
+        </td>
+        <td align="center" >
           <b>
             <div style="padding-top: 10px; padding-left: 10px;">
               <a target="_blank" href="http://localhost:8080/manager/html">Pagina</a>
@@ -46,7 +64,7 @@
         <td align="center" >
           <b>
             <div style="padding-top: 10px; padding-left: 10px;">
-              <a target="_blank" href="http://localhost:8080/VIGIALISTAS_LISTAS_STD9.20">Pagina VIGIALISTAS_LISTAS_STD9</a>
+              <a target="_blank" href="http://localhost:8080/VIGIALISTAS_LISTAS_STD9.20">Pagina VIGIALISTAS_LISTAS_STD9.20</a>
             </div>
           </b>
         </td>
@@ -57,7 +75,6 @@
             </div>
           </b>
         </td>
-
       </tr>
       <tr id="frontend">
         <td colspan="5" align="center">
