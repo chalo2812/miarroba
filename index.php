@@ -12,17 +12,28 @@
   <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
 </head>
-
-<!--style>
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+<script>
+  function switchSystech() {
+    window.location.href = "https://systechsa.com/";
   }
+  function openLocal() {
+    var version = document.getElementById("version").value;
+    var modulo = document.getElementById("modulo").value;
+    var standalone = document.getElementById("standalone").checked;
 
-  tr:nth-child(odd) {
-    background-color: #f2f2f2;
+    if (version && modulo && standalone !== "" ) {
+      var raiz = "http://localhost:8080/VIGIA_";
+      var url = raiz + modulo  + "_" 
+      if (standalone) {
+        url += "STD";
+      }
+      url +=  version + "/";
+      window.open(url, "_blank");
+    } else {
+      alert("Por favor, complete todos los campos.");
+    }
   }
-</style-->
+</script>
 <body>
   <header class="header">
     <navbar class="navbar navbar-expand-lg" data-bs-theme="dark">
@@ -47,7 +58,7 @@
         </td>
       </tr>
       <tr style="text-align: center;">
-        <td align="center" >
+        <td align="center" colspan="2">
           <b>
             <div style="padding-top: 10px; padding-left: 10px;">
               <a target="_blank" href="http://localhost:8080/manager/html">Control</a>
@@ -55,18 +66,6 @@
           </b>
         </td>
         <td align="center" >
-          <b>
-            <div style="padding-top: 10px; padding-left: 10px;">
-              <a target="_blank" href="http://localhost:8080/manager/html">Pagina</a>
-            </div>
-          </b>
-        </td>
-        <td align="center" >
-          <b>
-            <div style="padding-top: 10px; padding-left: 10px;">
-              <a target="_blank" href="http://localhost:8080/VIGIALISTAS_LISTAS_STD9.20">Pagina VIGIALISTAS_LISTAS_STD9.20</a>
-            </div>
-          </b>
         </td>
         <td align="center" colspan="2">
           <b>
@@ -75,6 +74,43 @@
             </div>
           </b>
         </td>
+      </tr>
+      <tr style="text-align: center;">
+        <td></td>
+        <td colspan="3">
+          <p>Seleccion para generar la url completa</p>
+          <div style="width: 80px; display: inline-block; margin-right: 20px;">
+            <p>Version</p>
+            <input type="number" id="version" placeholder="Version" step="0.1" min="9.0" max="10"/>
+          </div>
+          <div style="width: 250px; display: inline-block; margin-right: 20px;">
+            <p>Modulo</p>
+            <select id="modulo" placeholder="Modulo">
+              <option value="" disabled selected>Elegir el modulo</option>
+              <option value="BANCA_STD">BANCA</option>
+              <option value="BANCA_GALICIA">BANCA GALICIA</option>
+              <option value="BANCO_BCH">BANCA CENTRAL</option>
+              <option value="BOLSA_STD">BOLSA</option>
+              <option value="FIDEICOMISOS_STD">FIDEICOMISOS</option>
+              <option value="LISTAS_LISTAS">LISTAS PORTUGUES (MUFG)</option>
+              <option value="SEGUROS_STD">SEGUROS</option>
+              <option value="BANCA_STD">STANDALONE</option>
+              <option value="TABLERO_STD">TABLERO</option>
+              <option value="TARJETAS_STD">TARJETAS</option>
+              <option value="TARJETAS_NARANJA">TARJETAS NARANJA</option>
+            </select>
+          </div>
+          <div style="width: 150px; display: inline-block; margin-right: 20px;">
+            <p>Standalone</p>
+            <select id="standalone" >
+              <option value="" disabled selected>Es Standalone o no</option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-success" onclick="openLocal()">Abrir</button>
+        </td>
+        <td></td>
       </tr>
       <tr id="frontend">
         <td colspan="5" align="center">
@@ -87,7 +123,7 @@
         <td colspan="2" align="center">
           <b>
             <div style="padding-top: 10px; padding-left: 10px;">
-              <a target="_blank" href="https://systechsa.com/nuevo_sitio/Cliente/">Nuevo Sitio</a> 
+              <a target="_blank" href="https://systechsa.com/nuevo_sitio/cliente/">Nuevo Sitio</a> 
             </div>
           </b>
         </td>
