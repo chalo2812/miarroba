@@ -23,7 +23,7 @@
 
     if (version && modulo && standalone !== "" ) {
       var raiz = "http://localhost:8080/VIGIA_";
-      var url = raiz + modulo  + "_" 
+      var url = raiz + modulo; 
       if (standalone) {
         url += "STD";
       }
@@ -76,14 +76,9 @@
         </td>
       </tr>
       <tr style="text-align: center;">
-        <td></td>
-        <td colspan="3">
+        <td colspan="5">
           <p>Seleccion para generar la url completa</p>
-          <div style="width: 80px; display: inline-block; margin-right: 20px;">
-            <p>Version</p>
-            <input type="number" id="version" placeholder="Version" step="0.1" min="9.0" max="10"/>
-          </div>
-          <div style="width: 250px; display: inline-block; margin-right: 20px;">
+          <div style="width: 220px; display: inline-block; margin-right: 30px;">
             <p>Modulo</p>
             <select id="modulo" placeholder="Modulo">
               <option value="" disabled selected>Elegir el modulo</option>
@@ -100,6 +95,10 @@
               <option value="TARJETAS_NARANJA">TARJETAS NARANJA</option>
             </select>
           </div>
+          <div style="width: 200px; display: inline-block; margin-right: 20px;">
+            <p>Version</p>
+            <input type="text" id="version" placeholder="Version" min="9.0.0" max="10.0.0" default="9.21.1">
+          </div>
           <div style="width: 150px; display: inline-block; margin-right: 20px;">
             <p>Standalone</p>
             <select id="standalone" >
@@ -110,7 +109,6 @@
           </div>
           <button type="button" class="btn btn-success" onclick="openLocal()">Abrir</button>
         </td>
-        <td></td>
       </tr>
       <tr id="frontend">
         <td colspan="5" align="center">
