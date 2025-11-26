@@ -20,7 +20,6 @@
     var version = document.getElementById("version").value;
     var modulo = document.getElementById("modulo").value;
     var standalone = document.getElementById("standalone").checked;
-
     if (version && modulo && standalone !== "" ) {
       var raiz = "http://localhost:8080/VIGIA_";
       var url = raiz + modulo; 
@@ -41,7 +40,7 @@
         <button type="button" class="btn" onclick="switchSystech()">
           <img src="logo.png" height="100%" class="rounded float-start"/>
         </button>
-        <div type="button" class="systech btn bg-success" >
+        <div type="button" class="systech btn bg-success">
           <a target="_blank" href="https://systechsa.com/">Systech SA</a>
         </div>
       </div>
@@ -61,7 +60,7 @@
         <td align="center" colspan="2">
           <b>
             <div style="padding-top: 10px; padding-left: 10px;">
-              <a target="_blank" href="http://localhost:8080/manager/html">Control</a>
+              <a target="_blank" href="http://localhost:8080/manager/html">Pagina</a>
             </div>
           </b>
         </td>
@@ -129,15 +128,14 @@
           <b style="text-align: center;">Frontend DESA</b>
           <b>
             <div style="padding-top: 10px; padding-left: 10px;">
-              <a target="_blank" href="https://desa-gestiondedeuda.claro.amx/">
-                Frontend Unico
-              </a> 
-            </div>
+              <a target="_blank" href="https://www.systechsa.com/sitio/index.php">Sitio</a> 
+             </div>
           </b>
         </td>
         <td colspan="1" align="center">
           <b style="text-align: center;">Frontend TEST</b>
           <b>
+
             <div style="padding-top: 10px; padding-left: 10px;">
               <a target="_blank" href="https://test-gestiondedeuda.claro.amx/">
                 Frontend Unico
